@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textBtn">#ffeab3</color>
+    <color name="btnBack">#356635</color>
+    <color name="past_green">#c9e2b3</color>
+    <color name="past_brown">#faebcc</color>
+    <color name="text_darl">#d58512</color>
+    <color name="btnPressedColor">#6a4123</color>
+    <color name="hoverColor">#23296C</color>
+    <color name="blue_85years">#4D8BC6</color>
+
+</resources>

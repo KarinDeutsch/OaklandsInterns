@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.USAFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btnBack"
+            android:paddingTop="5dp"
+            android:textColor="@color/textBtn"
+            android:paddingBottom="10dp"
+            android:text="@string/usa"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+        <ImageView
+            android:layout_width="70dp"
+            android:paddingStart="20dp"
+            android:layout_height="70dp"
+            android:id="@+id/oakland_logo"
+            android:src="@drawable/oaklandnurserylogo_1"
+            android:layout_gravity="start"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title">
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_below="@+id/title"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/flag"
+                        android:paddingTop="35dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/usa_flag" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/population"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@+id/flag"
+                        android:layout_below="@+id/title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Population: 340.1 Mio."
+                        android:textStyle="bold"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+
+                    <TextView
+                        android:id="@+id/area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/population"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/flag"
+                        android:text="Area:  9,833,520 sq km (3,794,083 square miles)"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/name"
+                        android:layout_toRightOf="@+id/flag"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/area"
+                        android:layout_marginBottom="5dp"
+                        android:text="Official Namse: United States of America"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/language"
+                        android:layout_toRightOf="@+id/flag"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_below="@+id/name"
+                        android:text="Official Language: English"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/capital"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@+id/flag"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/language"
+                        android:text="Capital City: Washington D.C."
+                        android:textStyle="bold"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        />
+                    <TextView
+                        android:id="@+id/government"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/capital"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@+id/flag"
+                        android:text="Government: constitutional Republic"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/funfact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/government"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/flag"
+                        android:text="3rd Bigges country in the world"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/funfact"
+                        android:id="@+id/geography"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="Geographical Info"/>
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_below="@+id/geography"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/geo"
+                        android:paddingTop="35dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/geography" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/geography"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Location: Primarily located in North America, bordering the Atlantic and Pacific Oceans."
+                        android:layout_toRightOf="@+id/geo"/>
+
+                    <TextView
+                        android:id="@+id/borders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Borders: Canada to the North &amp; Mexico to the south"
+                        android:layout_toRightOf="@+id/geo"/>
+
+                    <TextView
+                        android:id="@+id/landscape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/borders"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Landscape: Diverse with mountains (e.g., Rocky Mountains in the west, Appalachian Mountains in the east), plains (e.g., Great Plains), forests, deserts, and coastlines."
+                        android:layout_toRightOf="@+id/geo"/>
+
+                    <TextView
+                        android:id="@+id/high"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/landscape"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Highest point: Denali (Mount McKinley), Alaska at 20,310 feet (6,190 meters) above sea level."
+                        android:layout_toRightOf="@+id/geo"/>
+
+                    <TextView
+                        android:id="@+id/low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/high"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="lowest point: Death Valley, California at 282 feet (86 meters) below sea level."
+                        android:layout_toRightOf="@+id/geo"/>
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_below="@+id/culture_title"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/culture"
+                        android:paddingTop="35dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/economy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/low"
+                        android:id="@+id/culture_title"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="Cultural/Exonomical Highlights"/>
+
+                    <TextView
+                        android:id="@+id/economy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/culture_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Economy: largest exonomy of the world"
+                        android:layout_toRightOf="@+id/culture"/>
+
+                    <TextView
+                        android:id="@+id/culturalID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/economy"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Cultural Identity: Known as a melting pot of various cultures, ethnicities, and traditions."
+                        android:layout_toRightOf="@+id/culture"/>
+
+                    <TextView
+                        android:id="@+id/impact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/culturalID"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Impact: Influential in global music, art, film, politics, and technology."
+                        android:layout_toRightOf="@+id/culture"/>
+
+
+                    <ImageView
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_below="@+id/tidbits"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/libertyStatue"
+                        android:paddingTop="35dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/did_you_know" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/impact"
+                        android:id="@+id/tidbits"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="Interesting Tidbits"/>
+
+                    <TextView
+                        android:id="@+id/statue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tidbits"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="The Statue of Liberty was a gift from France in 1885.d"
+                        android:layout_toRightOf="@+id/libertyStatue"/>
+
+                    <TextView
+                        android:id="@+id/moon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/statue"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Americans were the first to walk on the moon."
+                        android:layout_toRightOf="@+id/libertyStatue"/>
+
+                    <TextView
+                        android:id="@+id/climate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/moon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="The U.S. encompasses all five major climatic zones: tropical, dry, temperate, continental, and polar"
+                        android:layout_toRightOf="@+id/libertyStatue"/>
+
+
+                    <TextView
+                        android:id="@+id/laws"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/climate"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Some states have peculiar laws, like Kansas once making it illegal to serve cherry pie à la mode on Sundays or New Jersey banning knitting during fishing season."
+                        android:layout_toRightOf="@+id/libertyStatue"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>

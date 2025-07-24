@@ -1,0 +1,690 @@
+[
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_urgent.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_urgent.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_diseases_pests_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/diseases_pests_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus6.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus6.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_usa_flag.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/usa_flag.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_delaware1.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/delaware1.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_feedback.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/feedback.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_albany.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_albany.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_error.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/error.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_sun_perennials_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/sun_perennials_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_basics.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/basics.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_customs.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_customs.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_marker.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/marker.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_button_bg.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/button_bg.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_basics.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_basics.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_shopping_tips.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_shopping_tips.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_phone_tips.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/phone_tips.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_house_tips.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_house_tips.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_economy.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/economy.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_deciduous_trees_icon.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/deciduous_trees_icon.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_transport.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/transport.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_locations.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/locations.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_native_trees_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/native_trees_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_groundcovers_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/groundcovers_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_clothes_marker.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/clothes_marker.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_fragment_official.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/fragment_official.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_delaware_guide.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/delaware_guide.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_hospital.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_hospital.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus7.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus7.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_delaware.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_delaware.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus_guide.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus_guide.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_dress_code.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/dress_code.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/xml_backup_rules.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_shopping_item.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/shopping_item.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_nursery_details.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_nursery_details.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_home_goods_marker.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/home_goods_marker.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_hand_shake.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/hand_shake.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_eating.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/eating.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_chemical_treatment_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/chemical_treatment_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_launcher_web.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_launcher_web.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_card_category_item.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/card_category_item.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_weather.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/weather.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_pharmacy.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_pharmacy.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_shopping.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_shopping.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_item_chat_message.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/item_chat_message.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_faq.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_faq.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_emergency.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_emergency.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_nurseries.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_nurseries.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_usa_ohio.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/usa_ohio.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_custom_tab.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/custom_tab.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_eating.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_eating.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_customs.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/customs.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_button_hover.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/button_hover.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus5.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus5.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_weather.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_weather.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_transport_tips.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_transport_tips.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_activities.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/activities.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_shade_perennials_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/shade_perennials_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_loading.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/loading.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_evergreen_trees_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/evergreen_trees_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_tipping.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_tipping.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ohio_flag.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ohio_flag.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_beauty_marker.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/beauty_marker.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_tipping.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/tipping.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_register.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_annual_flowers_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/annual_flowers_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_nursery.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/nursery.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_evergreen_shrubs_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/evergreen_shrubs_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_spinner_item.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/spinner_item.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_shopping_tips.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/shopping_tips.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_transport.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_transport.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_fragment_ohio.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/fragment_ohio.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_tooth.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_tooth.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_phone.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_phone.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_basic_laws.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_basic_laws.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_chat.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/chat.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_did_you_know.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/did_you_know.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_basic_law_ohio.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_basic_law_ohio.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_flowering_shrub_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/flowering_shrub_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_stethoscope.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_stethoscope.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_laws_rules.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/laws_rules.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_doctor.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_doctor.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_plants.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_plants.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_shopping.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/shopping.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_dublin2.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/dublin2.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/xml_data_extraction_rules.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus2.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus2.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_fertilizer_icon.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/fertilizer_icon.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_border_box.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/border_box.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_space.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/space.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_chat.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_chat.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_button_pressed.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/button_pressed.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_spinner_dropdown_item.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_list_item.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/list_item.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_newalbany1.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/newalbany1.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_category_detail.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_category_detail.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_plants.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/plants.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ornamental_grasses_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ornamental_grasses_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_usa_ohio.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_usa_ohio.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_dublin.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_dublin.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_playstore_icon.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/playstore_icon.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_native_perennials_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/native_perennials_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_small_talk.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/small_talk.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_hello.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/hello.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_list_group.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/list_group.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/anim_scale_on_click.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/anim/scale_on_click.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_activities.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_activities.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_laws.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_laws.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_listening.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/listening.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_body_language.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/body_language.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_faq.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/faq.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_geography.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/geography.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_playstore_icon_small.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/playstore_icon_small.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_native_shrubs_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/native_shrubs_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus3.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus3.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_question.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/question.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_dublin1.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/dublin1.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_conversions.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/conversions.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_dublin_guide.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/dublin_guide.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus1.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus1.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_login.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_columbus.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_columbus.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_button_focused_bg.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/button_focused_bg.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_important.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_important.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_emergencies.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/emergencies.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_important.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/important.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_fragment_local_numbers.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/fragment_local_numbers.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_conversions.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_conversions.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_albany_guide.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/albany_guide.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_columbus4.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/columbus4.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_grocery_marker.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/grocery_marker.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_fragment_u_s_a.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/fragment_u_s_a.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_wright.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/wright.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_tipping_activity.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/tipping_activity.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_card_local_numbers.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/card_local_numbers.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_phone_manners.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/phone_manners.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_guide.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_guide.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_clock.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/clock.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_house_tips.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/house_tips.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_delaware2.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/delaware2.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_tone.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/tone.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_item_image.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/item_image.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_transportation_tips.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/transportation_tips.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_edible_annuals_icon.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/edible_annuals_icon.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/layout_activity_main.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_electronics_marker.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/electronics_marker.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_oaklandnurserylogo_1.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/oaklandnurserylogo_1.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_dining.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/dining.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_queue.jpg.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/queue.jpg"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_pharmacy_marker.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/pharmacy_marker.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_logo_acorn.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/logo_acorn.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_guide.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/guide.png"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_button_normal.xml.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/button_normal.xml"
+    },
+    {
+        "merged": "com.goldenegg.oaklandsinterns.app-debug-50:/drawable_newalbany2.png.flat",
+        "source": "com.goldenegg.oaklandsinterns.app-main-52:/drawable/newalbany2.png"
+    }
+]

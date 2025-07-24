@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Oaklands Interns</string>
+    <string name="welcome_oakland_interns">Welcome Oakland Interns</string>
+    <string name="basics_to_know">Basics to Know</string>
+    <string name="nurseries_info">Nurseries Info</string>
+    <string name="plant_and_nursery_knowledge">Plant and Nursery Knowledge</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="more_about_usa_and_ohio">More about USA and Ohio</string>
+    <string name="local_guide">Local Guide</string>
+    <string name="faq">FAQ</string>
+    <string name="test">test</string>
+    <string name="usa">usa</string>
+    <string name="local_guide_in_columbus">Local Guide in Columbus</string>
+    <string name="local_guide_for_delaware">Local Guide for Delaware</string>
+    <string name="local_guide_for_dublin">Local Guide for Dublin</string>
+    <string name="local_guide_for_new_albany">Local Guide for New Albany</string>
+    <string name="title_location_permission">Location Permission</string>
+    <string name="text_location_permission">This app requires access to your location. Please allow location access to proceed.</string>
+    <string name="ok">OK</string>
+    <string name="household_tips">Household Tips</string>
+    <string name="phone_tips">Phone Tips</string>
+    <string name="transportation_tips">Transportation Tips</string>
+    <string name="uber_lyft_public_transit">Uber, Lyft, Public Transit</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register_now">Don\'t have an account? Register now</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="type_a_message">Type a message</string>
+</resources>

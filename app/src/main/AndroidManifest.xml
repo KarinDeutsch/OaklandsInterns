@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Remove WRITE_EXTERNAL_STORAGE -->
+    <!-- Instead, use Scoped Storage APIs in your code -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OaklandsInterns"
+        tools:targetApi="33">  <!-- Change this to Android 13 -->
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FaqActivity"/>
+        <activity android:name=".BasicsActivity"/>
+        <activity android:name=".EmergencyActivity"/>
+        <activity android:name=".GuideActivity"/>
+        <activity android:name=".NurseriesActivity"/>
+        <activity android:name=".PlantKnowledgeActivity"/>
+        <activity android:name=".UsaOhioActivity"/>
+        <activity android:name=".NurseryDetailsActivity" />
+        <activity android:name=".local_dublin"/>
+        <activity android:name=".local_columbus"/>
+        <activity android:name=".local_albany"/>
+        <activity android:name=".local_delaware"/>
+        <activity android:name=".local.albActivities"/>
+        <activity android:name=".local.dubTransport"/>
+        <activity android:name=".local.dubShop"/>
+        <activity android:name=".local.dubImportant"/>
+        <activity android:name=".local.delShop"/>
+        <activity android:name=".local.delImportant"/>
+        <activity android:name=".local.colTransport"/>
+        <activity android:name=".local.colShop"/>
+        <activity android:name=".local.colImportant"/>
+        <activity android:name=".local.colActivities"/>
+        <activity android:name=".local.albTransport"/>
+        <activity android:name=".local.albShop"/>
+        <activity android:name=".local.albImportant"/>
+        <activity android:name=".basics.BasicLawsActivity"/>
+        <activity android:name=".basics.BasicLawsOhio"/>
+        <activity android:name=".basics.ConversionsActivity"/>
+        <activity android:name=".basics.CustomsTopsActivity"/>
+        <activity android:name=".basics.EatingTipsActivity"/>
+        <activity android:name=".basics.HouseTipsActivity"/>
+        <activity android:name=".basics.LawsRulesActivity"/>
+        <activity android:name=".basics.PhoneActivity"/>
+        <activity android:name=".basics.TippingActivity"/>
+        <activity android:name=".basics.ShoppingTipsActivity"/>
+        <activity android:name=".basics.TransportTipsActivity"/>
+        <activity android:name=".basics.WeatherActivity"/>
+
+    </application>
+
+</manifest>
