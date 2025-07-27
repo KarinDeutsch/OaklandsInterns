@@ -44,9 +44,9 @@ public class colShop extends AppCompatActivity {
     private RecyclerView recyclerView;
     private Spinner filterSpinner;
     private ShoppingAdapter shoppingAdapter;
-    private List<ShoppingPlace> shoppingPlaces = new ArrayList<>();
-    private double columbusLat = 39.9625;
-    private double columbusLon = -82.983330;
+    private final List<ShoppingPlace> shoppingPlaces = new ArrayList<>();
+    private final double columbusLat = 39.9625;
+    private final double columbusLon = -82.983330;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,6 +2,7 @@ package com.goldenegg.oaklandsinterns;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.goldenegg.oaklandsinterns.adapters.PlantCategoryAdapter;
+import com.goldenegg.oaklandsinterns.basics.BasicLawsActivity;
+import com.goldenegg.oaklandsinterns.basics.LawsRulesActivity;
 import com.goldenegg.oaklandsinterns.plant_knowledge.CategoryDetailActivity;
 import com.goldenegg.oaklandsinterns.plant_knowledge.PlantCategory;
 
@@ -24,9 +27,21 @@ public class PlantKnowledgeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_plants);
 
-        recyclerViewCategories = findViewById(R.id.recyclerViewCategories);
+        // Logo button – go to MainActivity
+        ImageView imageViewLogo = findViewById(R.id.oakland_logo);
+        imageViewLogo.setOnClickListener(v ->
+                startActivity(new Intent(PlantKnowledgeActivity.this, MainActivity.class))
+        );
+
+        // Back button – go to BasicsActivity
+        ImageView imageViewBack = findViewById(R.id.btnBack);
+        imageViewBack.setOnClickListener(v ->
+                startActivity(new Intent(PlantKnowledgeActivity.this, MainActivity.class))
+        );
+
+            recyclerViewCategories = findViewById(R.id.recyclerViewCategories);
         recyclerViewCategories.setHasFixedSize(true);
         recyclerViewCategories.setLayoutManager(new LinearLayoutManager(this));
 

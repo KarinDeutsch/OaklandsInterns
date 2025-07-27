@@ -1,140 +1,151 @@
-//package com.goldenegg.oaklandsinterns;
-//
-//import android.os.Bundle;
-//import android.view.View;
-//import android.view.inputmethod.InputMethodManager;
-//import android.widget.Button;
-//import android.widget.EditText;
-//import android.widget.Toast;
-//
-//import java.util.Random;
-//
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.recyclerview.widget.LinearLayoutManager;
-//import androidx.recyclerview.widget.RecyclerView;
-//
-//import com.goldenegg.oaklandsinterns.R;
-//import com.goldenegg.oaklandsinterns.chat.ChatAdapter;
-//import com.goldenegg.oaklandsinterns.chat.Message;
-//
-//import java.util.ArrayList;
-//import java.util.List;
-//
-//import com.google.firebase.Timestamp;
-//import com.google.firebase.firestore.DocumentSnapshot;
-//import com.google.firebase.firestore.FirebaseFirestore;
-//import com.google.firebase.firestore.CollectionReference;
-//import com.google.firebase.firestore.DocumentReference;
-//import com.google.firebase.firestore.FieldValue;
-//
-//public class ChatActivity extends AppCompatActivity {
-//
-//    private RecyclerView recyclerViewChat;
-//    private EditText editTextMessage;
-//    private Button buttonSend;
-//    private ChatAdapter chatAdapter;
-//    private List<Message> messageList = new ArrayList<>();
-//
-//    // Firestore instance
-//    private FirebaseFirestore firestore = FirebaseFirestore.getInstance();
-//    private CollectionReference messagesRef = firestore.collection("messages");
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_chat);
-//
-//        recyclerViewChat = findViewById(R.id.recyclerViewChat);
-//        editTextMessage = findViewById(R.id.editTextMessage);
-//        buttonSend = findViewById(R.id.buttonSend);
-//
-//        chatAdapter = new ChatAdapter(messageList);
-//        recyclerViewChat.setLayoutManager(new LinearLayoutManager(this));
-//        recyclerViewChat.setAdapter(chatAdapter);
-//
-////        buttonSend.setOnClickListener(v -> sendMessage());
-//
-//        recyclerViewChat.scrollToPosition(messageList.size() - 1);
-//    }
-//
-//    String[] autoReplies = {
-//            "That's interesting!",
-//            "Can you tell me more?",
-//            "Nice one!",
-//            "Let's keep going!",
-//            "I didn't expect that!"
-//    };
-//
-//    private void sendMessage() {
-//        String message = editTextMessage.getText().toString().trim();
-//        if (!message.isEmpty()) {
-//            // Add message to Firestore
-//            sendMessageToFirestore(message, "user");
-//
-//            // Simulate system reply (optional)
-//            String reply = autoReplies[new Random().nextInt(autoReplies.length)];
-//            recyclerViewChat.postDelayed(() -> {
-//                sendMessageToFirestore(reply, "system");
-//            }, 500);
-//
-//            editTextMessage.setText("");  // Clear input field
-//            hideKeyboard();
-//        } else {
-//            Toast.makeText(this, "Please enter a message.", Toast.LENGTH_SHORT).show();
-//        }
-//    }
-//
-//    private void sendMessageToFirestore(String message, String sender) {
-//        // Create a new message object
-//        Message messageObj = new Message(message, sender.equals("user"));
-//
-//        // Add timestamp field
-//        messageObj.setTimestamp(Timestamp.now());
-//
-//        // Add the message to Firestore
-//        messagesRef.add(messageObj)
-//                .addOnSuccessListener(documentReference -> {
-//                    messageList.add(messageObj);
-//                    chatAdapter.notifyItemInserted(messageList.size() - 1);
-//                    recyclerViewChat.scrollToPosition(messageList.size() - 1);
-//                })
-//                .addOnFailureListener(e -> {
-//                    Toast.makeText(ChatActivity.this, "Failed to send message.", Toast.LENGTH_SHORT).show();
-//                });
-//    }
-//
-//    private void hideKeyboard() {
-//        View view = this.getCurrentFocus();
-//        if (view != null) {
-//            InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-//            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-//        }
-//    }
-//
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//
-//        messagesRef.orderBy("timestamp")  // Order by timestamp if you want to display messages in order
-//                .addSnapshotListener((snapshot, e) -> {
-//                    if (e != null) {
-//                        Toast.makeText(ChatActivity.this, "Error loading messages.", Toast.LENGTH_SHORT).show();
-//                        return;
-//                    }
-//
-//                    messageList.clear();
-//                    for (DocumentSnapshot document : snapshot.getDocuments()) {
-//                        Message message = document.toObject(Message.class);
-//
-//                        // Check for null timestamp and set it to current time if needed
-//                        if (message.getTimestamp() == null) {
-//                            message.setTimestamp(Timestamp.now()); // Set current timestamp if it's null
-//                        }
-//
-//                        messageList.add(message);
-//                    }
-//                    chatAdapter.notifyDataSetChanged();
-//                    recyclerViewChat.scrollToPosition(messageList.size() - 1);
-//                });
-//    }
-//}
+package com.goldenegg.oaklandsinterns;
+
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.goldenegg.oaklandsinterns.chat.Message;
+import com.goldenegg.oaklandsinterns.chat.ChatAdapter;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ChatActivity extends AppCompatActivity {
+
+    private RecyclerView recyclerView;
+    private ChatAdapter chatAdapter;
+    private List<Message> messageList;
+    private EditText editTextMessage;
+    private Button buttonSend;
+
+    private String chatId;
+    private String chatType; // "general", "group", or "private"
+    private DatabaseReference messagesRef;
+    private String currentUserId;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chat);
+
+        recyclerView = findViewById(R.id.recyclerViewChat);
+        editTextMessage = findViewById(R.id.editTextMessage);
+        buttonSend = findViewById(R.id.buttonSend);
+
+        chatId = getIntent().getStringExtra("chat_id");
+        chatType = getIntent().getStringExtra("chat_type");
+
+        currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        messageList = new ArrayList<>();
+        chatAdapter = new ChatAdapter(messageList);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(chatAdapter);
+
+        messagesRef = FirebaseDatabase.getInstance().getReference("chats").child(chatId).child("messages");
+
+        loadMessages();
+
+        buttonSend.setOnClickListener(v -> sendMessage());
+    }
+
+    private void loadMessages() {
+        messagesRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                messageList.clear();
+                for (DataSnapshot messageSnapshot : snapshot.getChildren()) {
+                    Message message = messageSnapshot.getValue(Message.class);
+                    if (message != null) {
+                        messageList.add(message);
+                    }
+                }
+                chatAdapter.notifyDataSetChanged();
+                if (!messageList.isEmpty()) {
+                    recyclerView.scrollToPosition(messageList.size() - 1);
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                Toast.makeText(ChatActivity.this, "Failed to load messages.", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void sendMessage() {
+        String content = editTextMessage.getText().toString().trim();
+        if (content.isEmpty()) {
+            Toast.makeText(this, "Please enter a message.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if ("private".equals(chatType)) {
+            // For private chat, find other participant async, then send message with receiver set
+            getOtherParticipantId(otherUserId -> {
+                if (otherUserId == null) {
+                    Toast.makeText(ChatActivity.this, "Error: Could not find chat recipient.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                sendMessageToFirebase(content, otherUserId);
+            });
+        } else {
+            // For group/general chats, no receiver needed
+            sendMessageToFirebase(content, null);
+        }
+    }
+
+    private void sendMessageToFirebase(String content, String receiverId) {
+        Message message = new Message(currentUserId, receiverId, content, System.currentTimeMillis());
+
+        messagesRef.push().setValue(message)
+                .addOnSuccessListener(aVoid -> {
+                    editTextMessage.setText("");
+                    recyclerView.scrollToPosition(messageList.size() - 1);
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(ChatActivity.this, "Failed to send message.", Toast.LENGTH_SHORT).show();
+                });
+    }
+
+    // Callback interface for async fetching of other participant ID
+    public interface ParticipantCallback {
+        void onCallback(String otherUserId);
+    }
+
+    // Async method to get the other participant's user ID in a private chat
+    private void getOtherParticipantId(ParticipantCallback callback) {
+        DatabaseReference participantsRef = FirebaseDatabase.getInstance()
+                .getReference("chats").child(chatId).child("participants");
+
+        participantsRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                for (DataSnapshot participant : snapshot.getChildren()) {
+                    String uid = participant.getKey();
+                    if (uid != null && !uid.equals(currentUserId)) {
+                        callback.onCallback(uid);
+                        return; // found other participant
+                    }
+                }
+                callback.onCallback(null); // no other participant found
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                callback.onCallback(null); // error case
+            }
+        });
+    }
+}

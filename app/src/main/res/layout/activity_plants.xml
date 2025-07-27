@@ -3,21 +3,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textViewWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome New Nursery Workers! Explore Ohio Plant Categories."
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:id="@+id/topBar"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Explore Ohio Plant Categories"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/textBtn"
+            android:textStyle="bold"
+            android:background="@color/btnBack"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/oakland_logo"
+            android:src="@drawable/oaklandnurserylogo_1"
+            android:layout_gravity="start|center_vertical"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:id="@+id/btnBack"
+            android:backgroundTint="@color/textBtn"
+            android:layout_gravity="center_vertical|end"/>
+    </FrameLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewCategories"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textViewWelcome"
+        android:layout_below="@id/topBar"
         android:scrollbars="vertical"/>
 
 </RelativeLayout>

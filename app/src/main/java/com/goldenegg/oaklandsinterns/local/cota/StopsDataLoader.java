@@ -42,4 +42,4 @@ public class StopsDataLoader {
         }
         return stops;
     }
-};
+}

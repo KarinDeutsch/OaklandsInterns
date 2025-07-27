@@ -18,8 +18,8 @@ import java.util.List;
 
 public class PlantCategoryAdapter extends RecyclerView.Adapter<PlantCategoryAdapter.CategoryViewHolder> {
 
-    private List<PlantCategory> categoryList;
-    private Context context;
+    private final List<PlantCategory> categoryList;
+    private final Context context;
     private OnItemClickListener listener; // For handling clicks
 
     public interface OnItemClickListener {

@@ -14,7 +14,7 @@ import com.goldenegg.oaklandsinterns.EmergencyActivity;
 import com.goldenegg.oaklandsinterns.MainActivity;
 import com.goldenegg.oaklandsinterns.R;
 
-public class BasicLawsOhio extends AppCompatActivity implements View.OnClickListener {
+public class BasicLawsOhio extends AppCompatActivity {
     ImageView logo;
     Button btnBack;
 
@@ -23,24 +23,17 @@ public class BasicLawsOhio extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_law_ohio);
 
-        ImageView logo = findViewById(R.id.oakland_logo);
-        Button btnBack = findViewById(R.id.btnBack);
 
-        btnBack.setOnClickListener(this);
-        logo.setOnClickListener(this);
-    }
+        // Logo button – go to MainActivity
+        ImageView imageViewLogo = findViewById(R.id.oakland_logo);
+        imageViewLogo.setOnClickListener(v ->
+                startActivity(new Intent(BasicLawsOhio.this, MainActivity.class))
+        );
 
-    @Override
-    public void onClick(View v) {
-        Intent intent;
-        if (v.getId() == R.id.btnBack) {
-            intent = new Intent(BasicLawsOhio.this, BasicsActivity.class);  // Ensure this points to EmergencyActivity
-            startActivity(intent);
-            Toast.makeText(BasicLawsOhio.this, "Going back to Main Menu", Toast.LENGTH_SHORT).show();
-        } else if (v.getId() == R.id.oakland_logo) {
-            intent = new Intent(BasicLawsOhio.this, MainActivity.class);
-            startActivity(intent);
-            Toast.makeText(BasicLawsOhio.this, "Going back to Basics!", Toast.LENGTH_SHORT).show();
-        }
+        // Back button – go to BasicsActivity
+        ImageView imageViewBack = findViewById(R.id.btnBack);
+        imageViewBack.setOnClickListener(v ->
+                startActivity(new Intent(BasicLawsOhio.this, LawsRulesActivity.class))
+        );
     }
 }

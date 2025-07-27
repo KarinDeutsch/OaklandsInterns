@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.goldenegg.oaklandsinterns.BasicsActivity;
 import com.goldenegg.oaklandsinterns.FaqActivity;
 import com.goldenegg.oaklandsinterns.MainActivity;
 import com.goldenegg.oaklandsinterns.NurseriesActivity;
@@ -26,9 +27,18 @@ public class PhoneActivity extends AppCompatActivity implements View.OnClickList
         btnSimInfographic = findViewById(R.id.btnSimInfographic);
         btnCarrierInfographic = findViewById(R.id.btnCarrierInfographic);
 
-        // Initialize ImageView (Oakland logo)
-        ImageView imageView = findViewById(R.id.oakland_logo);
-        imageView.setOnClickListener(v -> startActivity(new Intent(PhoneActivity.this, MainActivity.class)));
+
+        // Logo button – go to MainActivity
+        ImageView imageViewLogo = findViewById(R.id.oakland_logo);
+        imageViewLogo.setOnClickListener(v ->
+                startActivity(new Intent(PhoneActivity.this, MainActivity.class))
+        );
+
+        // Back button – go to BasicsActivity
+        ImageView imageViewBack = findViewById(R.id.btnBack);
+        imageViewBack.setOnClickListener(v ->
+                startActivity(new Intent(PhoneActivity.this, BasicsActivity.class))
+        );
 
         // Set button listeners
         btnRobocallsInfographic.setOnClickListener(this);

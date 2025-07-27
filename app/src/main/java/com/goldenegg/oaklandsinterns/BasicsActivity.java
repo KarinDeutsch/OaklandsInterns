@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.goldenegg.oaklandsinterns.basics.ConversionsActivity;
-import com.goldenegg.oaklandsinterns.basics.CustomsTopsActivity;
+import com.goldenegg.oaklandsinterns.basics.CustomsTipsActivity;
 import com.goldenegg.oaklandsinterns.basics.EatingTipsActivity;
 import com.goldenegg.oaklandsinterns.basics.HouseTipsActivity;
 import com.goldenegg.oaklandsinterns.basics.LawsRulesActivity;
@@ -97,7 +97,7 @@ App Progress Overview:
             startActivity(intent);
             Toast.makeText(BasicsActivity.this, "Opening Eating Tips!", Toast.LENGTH_SHORT).show();
         } else if (v.getId() == R.id.btnCustoms) {
-            intent = new Intent(BasicsActivity.this, CustomsTopsActivity.class);
+            intent = new Intent(BasicsActivity.this, CustomsTipsActivity.class);
             startActivity(intent);
             Toast.makeText(BasicsActivity.this, "Opening Customs Tips!", Toast.LENGTH_SHORT).show();
         } else if (v.getId() == R.id.btnLaws) {

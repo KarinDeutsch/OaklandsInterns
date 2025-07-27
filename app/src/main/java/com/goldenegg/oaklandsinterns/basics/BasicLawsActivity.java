@@ -7,10 +7,11 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.goldenegg.oaklandsinterns.BasicsActivity;
 import com.goldenegg.oaklandsinterns.MainActivity;
 import com.goldenegg.oaklandsinterns.R;
 
-public class BasicLawsActivity extends AppCompatActivity implements View.OnClickListener {
+public class BasicLawsActivity extends AppCompatActivity {
     ImageView logo;
 
     @Override
@@ -18,11 +19,17 @@ public class BasicLawsActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_laws); // MAKE SURE THIS MATCHES YOUR XML FILE NAME
 
-        ImageView imageView = findViewById(R.id.oakland_logo);
-    }
 
-    @Override
-    public void onClick(View v) {
-        startActivity(new Intent(BasicLawsActivity.this, MainActivity.class));
+        // Logo button – go to MainActivity
+        ImageView imageViewLogo = findViewById(R.id.oakland_logo);
+        imageViewLogo.setOnClickListener(v ->
+                startActivity(new Intent(BasicLawsActivity.this, MainActivity.class))
+        );
+
+        // Back button – go to BasicsActivity
+        ImageView imageViewBack = findViewById(R.id.btnBack);
+        imageViewBack.setOnClickListener(v ->
+                startActivity(new Intent(BasicLawsActivity.this, LawsRulesActivity.class))
+        );
     }
 }

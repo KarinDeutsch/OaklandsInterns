@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 
 import com.goldenegg.oaklandsinterns.MainActivity;
 import com.goldenegg.oaklandsinterns.R;
+import com.goldenegg.oaklandsinterns.UsaOhioActivity;
 
 public class OhioFragment extends Fragment {
 
@@ -31,7 +32,18 @@ public class OhioFragment extends Fragment {
         TextView capital = view.findViewById(R.id.capital);
         TextView government = view.findViewById(R.id.government);
         TextView area = view.findViewById(R.id.area);
+        ImageView imageViewLogo = view.findViewById(R.id.oakland_logo);
+        ImageView imageViewBack = view.findViewById(R.id.btnBack);
 
+        // ✅ Logo button – go to MainActivity
+        imageViewLogo.setOnClickListener(v ->
+                startActivity(new Intent(requireActivity(), MainActivity.class))
+        );
+
+        // ✅ Back button – go to UsaOhioActivity
+        imageViewBack.setOnClickListener(v ->
+                startActivity(new Intent(requireActivity(), UsaOhioActivity.class))
+        );
 
         // Set the text with HTML formatting for bold labels
         population.setText(Html.fromHtml("<b>Population:</b> 11.8 Mio., ranking 7th in USA."));
@@ -40,13 +52,6 @@ public class OhioFragment extends Fragment {
         capital.setText(Html.fromHtml("<b>Capital City:</b> Columbus"));
         government.setText(Html.fromHtml("<b>Government:</b> Executive (Governor), Legislative (General Assembly), Judicial (Supreme Court)"));
         area.setText(Html.fromHtml("<b>Area:</b> 116,096 sq km (44,825 sq miles) ranking 34th in USA"));
-
-        // Fix the ImageView click listener
-        ImageView imageView = view.findViewById(R.id.oakland_logo);
-        imageView.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), MainActivity.class);
-            startActivity(intent);
-        });
 
         return view;
     }

@@ -55,7 +55,7 @@ public class UsaOhioActivity extends AppCompatActivity {
     private void setupTabIcons() {
         // Custom view for USA tab
         View usaTabView = LayoutInflater.from(UsaOhioActivity.this).inflate(R.layout.custom_tab, null);
-        ImageView usaIcon = ((View) usaTabView).findViewById(R.id.tab_icon);
+        ImageView usaIcon = usaTabView.findViewById(R.id.tab_icon);
         TextView usaText = usaTabView.findViewById(R.id.tab_text);
         usaIcon.setImageResource(R.drawable.usa_flag); // USA flag image
         usaText.setText("USA");

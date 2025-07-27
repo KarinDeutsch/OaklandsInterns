@@ -1,13 +1,13 @@
 package com.goldenegg.oaklandsinterns.models;
 
 public class ShoppingPlace {
-    private String name;
-    private String address;
-    private String phone;
-    private String website;
-    private String category;
-    private double lat;
-    private double lon;
+    private final String name;
+    private final String address;
+    private final String phone;
+    private final String website;
+    private final String category;
+    private final double lat;
+    private final double lon;
 
     public ShoppingPlace(String name, String address, String phone, String website, String category, double lat, double lon) {
         this.name = name;

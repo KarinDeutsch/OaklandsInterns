@@ -53,4 +53,5 @@ dependencies {
     implementation(libs.play.services.location)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.analytics)
+    implementation(libs.firebase.database)
 }

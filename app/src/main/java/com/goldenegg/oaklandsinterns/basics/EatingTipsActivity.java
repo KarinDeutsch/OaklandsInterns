@@ -17,8 +17,16 @@ public class EatingTipsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eating);
 
-        // Initialize ImageView (Oakland logo)
-        ImageView imageView = findViewById(R.id.oakland_logo);
-        imageView.setOnClickListener(v -> startActivity(new Intent(EatingTipsActivity.this, MainActivity.class)));
+        // Logo button – go to MainActivity
+        ImageView imageViewLogo = findViewById(R.id.oakland_logo);
+        imageViewLogo.setOnClickListener(v ->
+                startActivity(new Intent(EatingTipsActivity.this, MainActivity.class))
+        );
+
+        // Back button – go to BasicsActivity
+        ImageView imageViewBack = findViewById(R.id.btnBack);
+        imageViewBack.setOnClickListener(v ->
+                startActivity(new Intent(EatingTipsActivity.this, BasicsActivity.class))
+        );
     }
 }

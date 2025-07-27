@@ -15,7 +15,7 @@ import java.util.List;
 
 public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
-    private Context context;
+    private final Context context;
     private List<String> expandableListTitle;
     private HashMap<String, String> expandableListDetail;
 
@@ -99,7 +99,7 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
             convertView = layoutInflater.inflate(R.layout.list_item, null);
         }
 
-        TextView expandedListTextView =(TextView) convertView
+        TextView expandedListTextView = convertView
                 .findViewById(R.id.ExpandedListItem);
         expandedListTextView.setText(expandedListText);
         return convertView;

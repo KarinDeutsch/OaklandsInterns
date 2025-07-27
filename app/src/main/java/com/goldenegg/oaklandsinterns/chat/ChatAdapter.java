@@ -1,63 +1,115 @@
-//package com.goldenegg.oaklandsinterns.chat;
-//
-//import android.graphics.Color;
-//import android.os.Message;
-//import android.view.Gravity;
-//import android.view.LayoutInflater;
-//import android.view.View;
-//import android.view.ViewGroup;
-//import android.widget.TextView;
-//
-//import androidx.annotation.NonNull;
-//import androidx.recyclerview.widget.RecyclerView;
-//
-//import com.goldenegg.oaklandsinterns.R;
-//
-//import java.util.List;
-//
-//public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder> {
-//    private List<Message> messageList;
-//
-//    public ChatAdapter(List<Message> messageList) {
-//        this.messageList = messageList;
-//    }
-//
-//    @NonNull
-//    @Override
-//    public ChatViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//        View view = LayoutInflater.from(parent.getContext())
-//                .inflate(R.layout.item_chat_message, parent, false);
-//        return new ChatViewHolder(view);
-//    }
-//
-//    @Override
-//    public void onBindViewHolder(@NonNull ChatViewHolder holder, int position) {
-//        Message message = messageList.get(position);
-//        holder.bind(message);
-//    }
-//
-//    @Override
-//    public int getItemCount() {
-//        return messageList.size();
-//    }
-//
-//    class ChatViewHolder extends RecyclerView.ViewHolder {
-//        TextView textView;
-//
-//        ChatViewHolder(@NonNull View itemView) {
-//            super(itemView);
-//            textView = itemView.findViewById(R.id.textViewMessage);
-//        }
-//
-//        void bind(Message message) {
-//            textView.setText(message.getContent());
-//            if (message.isUserMessage()) {
-//                textView.setBackgroundColor(Color.parseColor("#DCF8C6")); // green bubble
-//                textView.setGravity(Gravity.END);
-//            } else {
-//                textView.setBackgroundColor(Color.WHITE);
-//                textView.setGravity(Gravity.START);
-//            }
-//        }
-//    }
-//}
+package com.goldenegg.oaklandsinterns.chat;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.goldenegg.oaklandsinterns.R;
+
+import java.util.List;
+
+public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    private static final int TYPE_USER = 0;
+    private static final int TYPE_ASSISTANT = 1;
+    private static final int TYPE_SYSTEM = 2;
+
+    private List<Message> messageList;
+
+    public ChatAdapter(List<Message> messageList) {
+        this.messageList = messageList;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        Message message = messageList.get(position);
+        switch (message.getType()) {
+            case USER:
+                return TYPE_USER;
+            case ASSISTANT:
+                return TYPE_ASSISTANT;
+            case SYSTEM:
+            default:
+                return TYPE_SYSTEM;
+        }
+    }
+
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        if (viewType == TYPE_USER) {
+            View view = inflater.inflate(R.layout.item_user_message, parent, false);
+            return new UserMessageViewHolder(view);
+        } else if (viewType == TYPE_ASSISTANT) {
+            View view = inflater.inflate(R.layout.item_chat_message, parent, false);
+            return new AssistantMessageViewHolder(view);
+        } else {
+            View view = inflater.inflate(R.layout.item_system_message, parent, false);
+            return new SystemMessageViewHolder(view);
+        }
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        Message message = messageList.get(position);
+        if (holder instanceof UserMessageViewHolder) {
+            ((UserMessageViewHolder) holder).bind(message);
+        } else if (holder instanceof AssistantMessageViewHolder) {
+            ((AssistantMessageViewHolder) holder).bind(message);
+        } else if (holder instanceof SystemMessageViewHolder) {
+            ((SystemMessageViewHolder) holder).bind(message);
+        }
+    }
+
+    @Override
+    public int getItemCount() {
+        return messageList.size();
+    }
+
+    static class UserMessageViewHolder extends RecyclerView.ViewHolder {
+        private TextView userMessageText;
+
+        public UserMessageViewHolder(@NonNull View itemView) {
+            super(itemView);
+            userMessageText = itemView.findViewById(R.id.text_user_message);
+        }
+
+        public void bind(Message message) {
+            // FIXED: Use getMessage() instead of getContent()
+            userMessageText.setText(message.getMessage());
+        }
+    }
+
+    static class AssistantMessageViewHolder extends RecyclerView.ViewHolder {
+        private TextView assistantMessageText;
+
+        public AssistantMessageViewHolder(@NonNull View itemView) {
+            super(itemView);
+            assistantMessageText = itemView.findViewById(R.id.text_chat_message);
+        }
+
+        public void bind(Message message) {
+            // FIXED: Use getMessage() instead of getContent()
+            assistantMessageText.setText(message.getMessage());
+        }
+    }
+
+    static class SystemMessageViewHolder extends RecyclerView.ViewHolder {
+        private TextView systemMessageText;
+
+        public SystemMessageViewHolder(@NonNull View itemView) {
+            super(itemView);
+            systemMessageText = itemView.findViewById(R.id.text_system_message);
+        }
+
+        public void bind(Message message) {
+            // FIXED: Use getMessage() instead of getContent()
+            systemMessageText.setText(message.getMessage());
+        }
+    }
+}

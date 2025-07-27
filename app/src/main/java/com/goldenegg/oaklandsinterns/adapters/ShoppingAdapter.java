@@ -15,8 +15,8 @@ import java.util.List;
 
 public class ShoppingAdapter extends RecyclerView.Adapter<ShoppingAdapter.ShoppingViewHolder> {
     private List<ShoppingPlace> shoppingPlaces;
-    private double baseLat;
-    private double baseLon;
+    private final double baseLat;
+    private final double baseLon;
 
     // Constructor that accepts base coordinates and ensures shoppingPlaces is never null
     public ShoppingAdapter(List<ShoppingPlace> shoppingPlaces, double baseLat, double baseLon) {

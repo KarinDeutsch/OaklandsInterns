@@ -4,12 +4,12 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class PlantCategory implements Parcelable { // Implement Parcelable
-    private int imageResourceId;
-    private String title;
-    private String shortDescription;
-    private String longDescription; // New: Detailed description for the detail screen
-    private String careTips;        // New: Specific care tips for this category
-    private String OhioContext;     // New: How this relates to Ohio's climate/uses
+    private final int imageResourceId;
+    private final String title;
+    private final String shortDescription;
+    private final String longDescription; // New: Detailed description for the detail screen
+    private final String careTips;        // New: Specific care tips for this category
+    private final String OhioContext;     // New: How this relates to Ohio's climate/uses
 
     public PlantCategory(int imageResourceId, String title, String shortDescription,
                          String longDescription, String careTips, String OhioContext) {

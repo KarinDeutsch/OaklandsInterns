@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.USAFragment">
-    <RelativeLayout
+
+    <!-- Header: your custom FrameLayout header -->
+    <FrameLayout
+        android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:background="@color/btnBack">
+
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/btnBack"
-            android:paddingTop="5dp"
-            android:textColor="@color/textBtn"
-            android:paddingBottom="10dp"
             android:text="Ohio"
+            android:textSize="20sp"
             android:textAlignment="center"
-            android:textSize="50sp" />
-        <ImageView
-            android:layout_width="70dp"
-            android:paddingStart="20dp"
-            android:layout_height="70dp"
-            android:id="@+id/oakland_logo"
-            android:src="@drawable/oaklandnurserylogo_1"
-            android:layout_gravity="start"
-            />
+            android:textColor="@color/textBtn"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center" />
 
-        <ScrollView
+        <ImageView
+            android:id="@+id/oakland_logo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/oaklandnurserylogo_1"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_back"
+            android:backgroundTint="@color/textBtn" />
+    </FrameLayout>
+    <!-- Scrollable content below header -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/title">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/title">
+            android:padding="10dp">
 
                     <ImageView
                         android:layout_width="88dp"
@@ -324,8 +338,6 @@
                         android:layout_marginBottom="5dp"
                         android:text="Ohio is the only state whose flag is a pennant"
                         android:layout_toRightOf="@+id/libertyStatue"/>
-                </RelativeLayout>
-            </LinearLayout>
-        </ScrollView>
-    </RelativeLayout>
-</FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

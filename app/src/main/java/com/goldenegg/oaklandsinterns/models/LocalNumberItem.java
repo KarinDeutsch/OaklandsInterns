@@ -1,12 +1,12 @@
 package com.goldenegg.oaklandsinterns.models;
 
 public class LocalNumberItem {
-    private int iconRes;
-    private String type;
-    private String name;
-    private String address;
-    private String phone;
-    private String city;
+    private final int iconRes;
+    private final String type;
+    private final String name;
+    private final String address;
+    private final String phone;
+    private final String city;
 
     public LocalNumberItem(String type, String name, String address, String phone, int iconRes, String city) {
         this.type = type;

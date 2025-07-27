@@ -37,10 +37,18 @@ public class WeatherActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_weather);
 
-            // Initialize ImageView (Oakland logo)
-            ImageView imageView = findViewById(R.id.oakland_logo);
-            imageView.setOnClickListener(v -> startActivity(new Intent(WeatherActivity.this, MainActivity.class)));
 
+            // Logo button – go to MainActivity
+            ImageView imageViewLogo = findViewById(R.id.oakland_logo);
+            imageViewLogo.setOnClickListener(v ->
+                    startActivity(new Intent(WeatherActivity.this, MainActivity.class))
+            );
+
+            // Back button – go to BasicsActivity
+            ImageView imageViewBack = findViewById(R.id.btnBack);
+            imageViewBack.setOnClickListener(v ->
+                    startActivity(new Intent(WeatherActivity.this, BasicsActivity.class))
+            );
             // Initialize UI elements
             textViewSeasonsTitle = findViewById(R.id.textViewSeasonsTitle);
             textViewSummer = findViewById(R.id.textViewSummer);
