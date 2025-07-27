@@ -12,7 +12,7 @@ public class Message {
     private String receiver; // nullable for group/general chats
     private String message;
     private long timestamp;
-    private MessageType type;  // <<-- Add this field
+    private MessageType type;
 
     public Message() {
         // Firebase needs empty constructor

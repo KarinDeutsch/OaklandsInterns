@@ -33,7 +33,7 @@ public class CreateChatActivity extends AppCompatActivity {
     private Button buttonCreate, buttonCancel;
 
     private List<User> usersList = new ArrayList<>();
-    private ChatsListAdapter usersListAdapter;
+    private UsersListAdapter usersListAdapter;  // FIXED: Use UsersListAdapter, not ChatsListAdapter
 
     private DatabaseReference usersRef;
     private DatabaseReference chatsRef;
@@ -51,13 +51,12 @@ public class CreateChatActivity extends AppCompatActivity {
         buttonCancel = findViewById(R.id.buttonCancel);
 
         recyclerViewUsers.setLayoutManager(new LinearLayoutManager(this));
-        usersListAdapter = new ChatsListAdapter(usersList);
+        usersListAdapter = new UsersListAdapter(usersList);  // FIXED: instantiate UsersListAdapter
         recyclerViewUsers.setAdapter(usersListAdapter);
 
         usersRef = FirebaseDatabase.getInstance().getReference("users");
         chatsRef = FirebaseDatabase.getInstance().getReference("chats");
 
-        // Get current user ID from FirebaseAuth
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
         } else {
@@ -106,7 +105,6 @@ public class CreateChatActivity extends AppCompatActivity {
 
         String chatName = editTextChatName.getText().toString().trim();
 
-        // Determine chat type
         Chat.ChatType chatType = selectedUserIds.size() == 1 ? Chat.ChatType.PRIVATE : Chat.ChatType.GROUP;
 
         if (chatType == Chat.ChatType.GROUP && chatName.isEmpty()) {
@@ -114,7 +112,6 @@ public class CreateChatActivity extends AppCompatActivity {
             return;
         }
 
-        // Create chat ID - private chat uses sorted userIds, group chat generates new key
         String chatId;
         if (chatType == Chat.ChatType.PRIVATE) {
             List<String> sortedIds = new ArrayList<>(selectedUserIds);
@@ -129,18 +126,14 @@ public class CreateChatActivity extends AppCompatActivity {
             return;
         }
 
-        // Prepare participants map for Firebase
-        Map<String, Boolean> participantsMap = new HashMap<>();
-        for (String userId : selectedUserIds) {
-            participantsMap.put(userId, true);
-        }
+        // IMPORTANT: Your Chat class expects List<String> for participants,
+        // but you currently have a Set<String>. So convert it to List<String>:
+        List<String> participantsList = new ArrayList<>(selectedUserIds);
 
-        // Create Chat object with participants map and other fields
-        Chat newChat = new Chat(chatId, chatType, (List<String>) participantsMap, chatType == Chat.ChatType.GROUP ? chatName : null);
+        Chat newChat = new Chat(chatId, chatType, participantsList, chatType == Chat.ChatType.GROUP ? chatName : null);
         newChat.setTimestamp(System.currentTimeMillis());
-        newChat.setLastMessage(""); // Initialize lastMessage as empty
+        newChat.setLastMessage(""); // Initialize lastMessage empty
 
-        // Write whole chat object at once to Firebase
         chatsRef.child(chatId).setValue(newChat)
                 .addOnSuccessListener(aVoid -> {
                     Toast.makeText(this, "Chat created", Toast.LENGTH_SHORT).show();

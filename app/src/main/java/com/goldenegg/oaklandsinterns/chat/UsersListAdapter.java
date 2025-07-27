@@ -15,7 +15,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class UsersListAdapter extends RecyclerView.Adapter<ChatsListAdapter.UserViewHolder> {
+public class UsersListAdapter extends RecyclerView.Adapter<UsersListAdapter.UserViewHolder>{
 
     private List<User> userList;
     private Set<String> selectedUserIds = new HashSet<>();
@@ -64,8 +64,8 @@ public class UsersListAdapter extends RecyclerView.Adapter<ChatsListAdapter.User
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
-            usernameText = itemView.findViewById(R.id.textUsername);
-            checkbox = itemView.findViewById(R.id.checkboxUser);
+            usernameText = itemView.findViewById(R.id.user_name);
+            checkbox = itemView.findViewById(R.id.checkbox);
         }
     }
 }

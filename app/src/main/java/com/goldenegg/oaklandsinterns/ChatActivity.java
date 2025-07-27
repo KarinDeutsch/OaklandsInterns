@@ -53,7 +53,10 @@ public class ChatActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(chatAdapter);
 
-        messagesRef = FirebaseDatabase.getInstance().getReference("chats").child(chatId).child("messages");
+        messagesRef = FirebaseDatabase.getInstance()
+                .getReference("chats")
+                .child(chatId)
+                .child("messages");
 
         loadMessages();
 
@@ -107,7 +110,14 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     private void sendMessageToFirebase(String content, String receiverId) {
-        Message message = new Message(currentUserId, receiverId, content, System.currentTimeMillis());
+        // Create message with all required parameters including MessageType
+        Message message = new Message(
+                currentUserId,
+                receiverId,
+                content,
+                System.currentTimeMillis(),
+                Message.MessageType.USER
+        );
 
         messagesRef.push().setValue(message)
                 .addOnSuccessListener(aVoid -> {
